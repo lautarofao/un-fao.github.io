@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UN-FAO DevSecOps Best Practices: Tools, guidelines, and resources to embed security into every stage of the DevOps lifecycle.">
+    <meta name="keywords" content="FAO, DevSecOps, Security, DevOps, Best Practices, United Nations">
+    <meta name="author" content="UN-FAO">
+    <title>UN-FAO DevSecOps Best Practices</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="https://www.fao.org/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/" aria-label="UN-FAO DevSecOps Home">UN-FAO DevSecOps</a>
+                </div>
+                <nav class="main-nav" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="#mission" tabindex="0">Mission</a></li>
+                        <li><a href="#best-practices" tabindex="0">Best Practices</a></li>
+                        <li><a href="#contributing" tabindex="0">Contributing</a></li>
+                        <li><a href="#contact" tabindex="0">Contact</a></li>
+                    </ul>
+                </nav>
+                <button type="button" class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>UN-FAO DevSecOps Best Practices</h1>
+            <p class="lead">Consolidating tools, guidelines, and resources to embed security into every stage of the DevOps lifecycle.</p>
+            <a href="#intro" class="btn-primary" tabindex="0" aria-label="Learn more about UN-FAO DevSecOps">Learn More</a>
+        </div>
+    </section>
+
+    <main>
+        <section id="intro" class="section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <p>Welcome to the UN-FAO DevSecOps Best Practices repository! This project consolidates a range of tools, guidelines, and resources designed to help teams embed security into every stage of their DevOps lifecycle. Our goal is to drive secure, reliable, and compliant development practices for global development initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="mission" class="section bg-light">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <div class="content-wrapper">
+                    <p>Our mission is to foster a secure and resilient development environment by integrating robust security practices from design through deployment. By adopting a "security by design" mindset, we aim to help organizations:</p>
+                    <ul class="feature-list">
+                        <li>
+                            <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                            <span>Embed Security Early: Integrate security considerations from the planning phase.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-robot" aria-hidden="true"></i>
+                            <span>Automate Testing: Leverage automated security testing and vulnerability scanning.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line" aria-hidden="true"></i>
+                            <span>Ensure Continuous Monitoring: Implement real-time monitoring and logging for threat detection.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span>Promote Collaboration: Encourage cross-team dialogue and shared responsibility for security.</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clipboard-check" aria-hidden="true"></i>
+                            <span>Maintain Compliance: Adhere to industry standards and regulatory requirements.</span>
+                        </li>
+                    </ul>
+                    <p>For more about our broader initiatives, visit <a href="https://www.fao.org" target="_blank" rel="noopener" tabindex="0">fao.org</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="best-practices" class="section">
+            <div class="container">
+                <h2>Best Practices Overview</h2>
+                <div class="content-wrapper">
+                    <p>This repository is informed by industry-leading DevSecOps practices. Key principles include:</p>
+                    <div class="cards">
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-lock" aria-hidden="true"></i>
+                            <h3>Security by Design</h3>
+                            <p>Secure architecture and threat modeling from the start.</p>
+                        </div>
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-cogs" aria-hidden="true"></i>
+                            <h3>Automated Security Testing</h3>
+                            <p>Integrate static analysis, dependency scanning, and dynamic testing into your CI/CD pipeline.</p>
+                        </div>
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <h3>Infrastructure as Code (IaC)</h3>
+                            <p>Apply security best practices to code-managed infrastructure.</p>
+                        </div>
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-cloud" aria-hidden="true"></i>
+                            <h3>Container &amp; Cloud Security</h3>
+                            <p>Implement robust measures for container orchestration and cloud environments.</p>
+                        </div>
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-fire-extinguisher" aria-hidden="true"></i>
+                            <h3>Incident Response</h3>
+                            <p>Develop clear protocols for monitoring, logging, and reacting to potential threats.</p>
+                        </div>
+                        <div class="card" tabindex="0">
+                            <i class="fas fa-sync-alt" aria-hidden="true"></i>
+                            <h3>Collaboration &amp; Continuous Improvement</h3>
+                            <p>Engage in ongoing dialogue via our wiki, discussions, and Q&amp;A forums to keep pace with evolving threats.</p>
+                        </div>
+                    </div>
+                    <p>For detailed guidelines and additional resources, please explore our <a href="https://github.com/un-fao/devsecops-best-practices/wiki" target="_blank" rel="noopener" tabindex="0">wiki</a>, which includes step-by-step instructions and links to further documentation on each topic.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contributing" class="section bg-light">
+            <div class="container">
+                <h2>Contributing</h2>
+                <div class="content-wrapper">
+                    <p>We welcome contributions from the open-source community! If you'd like to improve our guidelines or add new content, please:</p>
+                    <ul>
+                        <li>Fork the <a href="https://github.com/un-fao/devsecops-best-practices" target="_blank" rel="noopener" tabindex="0">repository</a>.</li>
+                        <li>Review our <a href="https://github.com/un-fao/devsecops-best-practices/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener" tabindex="0">CONTRIBUTING</a> guidelines for details on our workflow and expectations.</li>
+                        <li>Submit pull requests with new features, bug fixes, or enhancements.</li>
+                        <li>Join the discussion on our channels to share ideas and ask questions.</li>
+                    </ul>
+                    <p>Not yet a member? Submit your access request via the internal eServices portal.</p>
+
+                    <h3>Code of Conduct</h3>
+                    <p>Our community is built on respect and inclusivity. Please read and follow our <a href="https://github.com/un-fao/devsecops-best-practices/blob/main/CODE_OF_CONDUCT.md" target="_blank" rel="noopener" tabindex="0">Code of Conduct</a> to help us maintain a positive environment for collaboration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="discussions" class="section">
+            <div class="container">
+                <h2>Discussions &amp; Support</h2>
+                <div class="content-wrapper">
+                    <p>Engage with fellow contributors and experts:</p>
+                    <div class="discussion-categories">
+                        <a href="https://github.com/un-fao/devsecops-best-practices/discussions/categories/announcements" target="_blank" rel="noopener" class="discussion-category" tabindex="0">
+                            <i class="fas fa-bullhorn" aria-hidden="true"></i>
+                            <h3>Announcements</h3>
+                            <p>Get the latest updates and release news.</p>
+                        </a>
+                        <a href="https://github.com/un-fao/devsecops-best-practices/discussions/categories/general" target="_blank" rel="noopener" class="discussion-category" tabindex="0">
+                            <i class="fas fa-comments" aria-hidden="true"></i>
+                            <h3>General Discussion</h3>
+                            <p>Talk about trends, challenges, and experiences in DevSecOps.</p>
+                        </a>
+                        <a href="https://github.com/un-fao/devsecops-best-practices/discussions/categories/ideas" target="_blank" rel="noopener" class="discussion-category" tabindex="0">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                            <h3>Ideas</h3>
+                            <p>Propose new features and innovative security solutions.</p>
+                        </a>
+                        <a href="https://github.com/un-fao/devsecops-best-practices/discussions/categories/q-a" target="_blank" rel="noopener" class="discussion-category" tabindex="0">
+                            <i class="fas fa-question-circle" aria-hidden="true"></i>
+                            <h3>Q &amp; A</h3>
+                            <p>Ask questions and get help from the community.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="repositories" class="section bg-light">
+            <div class="container">
+                <h2>Our Repositories</h2>
+                <div class="content-wrapper">
+                    <p>Explore our key GitHub repositories:</p>
+                    <div class="repo-grid">
+                        <a href="https://github.com/un-fao/devsecops-best-practices" target="_blank" rel="noopener" class="repo-card" tabindex="0">
+                            <div class="repo-header">
+                                <i class="fas fa-book" aria-hidden="true"></i>
+                                <h3>DevSecOps Best Practices</h3>
+                            </div>
+                            <p>Comprehensive guides and tools for implementing security in DevOps workflows.</p>
+                            <div class="repo-tags">
+                                <span class="tag">Documentation</span>
+                                <span class="tag">Security</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/un-fao/security-tools" target="_blank" rel="noopener" class="repo-card" tabindex="0">
+                            <div class="repo-header">
+                                <i class="fas fa-tools" aria-hidden="true"></i>
+                                <h3>Security Tools</h3>
+                            </div>
+                            <p>Collection of tools and scripts for security testing and monitoring.</p>
+                            <div class="repo-tags">
+                                <span class="tag">Tools</span>
+                                <span class="tag">Automation</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/un-fao/ci-cd-templates" target="_blank" rel="noopener" class="repo-card" tabindex="0">
+                            <div class="repo-header">
+                                <i class="fas fa-layer-group" aria-hidden="true"></i>
+                                <h3>CI/CD Templates</h3>
+                            </div>
+                            <p>Ready-to-use CI/CD pipeline templates with integrated security checks.</p>
+                            <div class="repo-tags">
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">Templates</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/un-fao/policy-as-code" target="_blank" rel="noopener" class="repo-card" tabindex="0">
+                            <div class="repo-header">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i>
+                                <h3>Policy as Code</h3>
+                            </div>
+                            <p>Implement security policies as code for automated compliance.</p>
+                            <div class="repo-tags">
+                                <span class="tag">Policy</span>
+                                <span class="tag">Compliance</span>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="text-center mt-4">
+                        <a href="https://github.com/un-fao" class="btn-secondary" target="_blank" rel="noopener" tabindex="0">
+                            View All Repositories <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="content-wrapper">
+                    <p>For inquiries or additional information about our projects, reach out at:</p>
+                    <p class="contact-email"><a href="mailto:github@un-fao.org" tabindex="0">Email: github@un-fao.org</a></p>
+                    <div class="contact-social">
+                        <a href="https://github.com/un-fao" target="_blank" rel="noopener" aria-label="GitHub" tabindex="0">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://twitter.com/FAO" target="_blank" rel="noopener" aria-label="Twitter" tabindex="0">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fao/" target="_blank" rel="noopener" aria-label="LinkedIn" tabindex="0">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <p>UN-FAO DevSecOps</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#mission" tabindex="0">Mission</a></li>
+                        <li><a href="#best-practices" tabindex="0">Best Practices</a></li>
+                        <li><a href="#contributing" tabindex="0">Contributing</a></li>
+                        <li><a href="#repositories" tabindex="0">Repositories</a></li>
+                        <li><a href="#contact" tabindex="0">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/un-fao" target="_blank" rel="noopener" aria-label="GitHub" tabindex="0">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://twitter.com/FAO" target="_blank" rel="noopener" aria-label="Twitter" tabindex="0">
+                        <i class="fab fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/fao/" target="_blank" rel="noopener" aria-label="LinkedIn" tabindex="0">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&amp;copy; <span class="current-year">2023</span> UN-FAO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
