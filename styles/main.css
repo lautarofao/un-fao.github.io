@@ -714,4 +714,10 @@ button:focus {
 
 .service-card:hover h3 {
     color: var(--primary-color);
+}
+
+.intro-large {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 } 
