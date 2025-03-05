@@ -27,7 +27,7 @@ def main():
     webbrowser.open(f"http://localhost:{PORT}")
     
     # Start server
-    with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    with socketserver.TCPServer(("localhost", PORT), Handler) as httpd:
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
