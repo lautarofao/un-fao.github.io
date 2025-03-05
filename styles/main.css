@@ -720,4 +720,97 @@ button:focus {
     font-size: 1.25rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+}
+
+/* Video Play Button */
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    z-index: 2;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-play-button i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.video-play-button:hover,
+.video-play-button:focus {
+    background-color: var(--white);
+    transform: translate(-50%, -50%) scale(1.1);
+    outline: none;
+}
+
+.video-play-button:focus-visible {
+    box-shadow: var(--focus-ring);
+}
+
+/* Video Controls */
+.video-controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.speed-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: var(--transition);
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.speed-control i {
+    font-size: 1.2rem;
+}
+
+.speed-control:hover,
+.speed-control:focus {
+    background-color: var(--white);
+    transform: scale(1.05);
+    outline: none;
+}
+
+.speed-control:focus-visible {
+    box-shadow: var(--focus-ring);
+}
+
+.speed-control.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .video-controls {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .speed-control span {
+        display: none;
+    }
+
+    .speed-control {
+        padding: 8px;
+        border-radius: 50%;
+    }
 } 

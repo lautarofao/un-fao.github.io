@@ -24,9 +24,9 @@
                 <nav class="main-nav" aria-label="Main Navigation">
                     <ul>
                         <li><a href="#mission" tabindex="0">Mission</a></li>
+                        <li><a href="#service-now" tabindex="0">Service Now</a></li>
                         <li><a href="#best-practices" tabindex="0">Best Practices</a></li>
                         <li><a href="#contributing" tabindex="0">Contributing</a></li>
-                        <li><a href="#service-now" tabindex="0">Service Now</a></li>
                         <li><a href="#contact" tabindex="0">Contact</a></li>
                     </ul>
                 </nav>
@@ -38,9 +38,15 @@
     </header>
 
     <section class="hero">
-        <video class="hero-banner-video" loop muted playsinline preload="auto">
+        <video id="hero-video" class="hero-banner-video" loop muted playsinline preload="auto">
             <source src="https://www.fao.org/videos/homepagelibraries/hero-banner-videos/agri-food-system-25-7-home-low.mp4?sfvrsn=335f9188_39">
         </video>
+        <div class="video-controls">
+            <button type="button" class="speed-control" aria-label="Toggle slow motion" tabindex="0">
+                <i class="fas fa-clock"></i>
+                <span>Slow Motion</span>
+            </button>
+        </div>
     </section>
 
     <main>

@@ -102,4 +102,87 @@ document.addEventListener('DOMContentLoaded', () => {
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
+
+    const heroVideo = document.getElementById('hero-video');
+    const speedControl = document.querySelector('.speed-control');
+    let isSlowMotion = false;
+    
+    // Function to handle video playback
+    const handleVideoPlayback = () => {
+        // Check if the video exists and is ready to play
+        if (heroVideo && heroVideo.readyState >= 2) {
+            // Set initial playback rate
+            heroVideo.playbackRate = isSlowMotion ? 0.5 : 1.0;
+            
+            // Play the video
+            const playPromise = heroVideo.play();
+
+            // Handle the play promise
+            if (playPromise !== undefined) {
+                playPromise
+                    .then(() => {
+                        // Video playback started successfully
+                        console.log('Video playback started');
+                    })
+                    .catch(error => {
+                        // Auto-play was prevented or there was an error
+                        console.warn('Video playback was prevented:', error);
+                        
+                        // Add a play button if autoplay is blocked
+                        if (!heroVideo.playing) {
+                            const playButton = document.createElement('button');
+                            playButton.className = 'video-play-button';
+                            playButton.innerHTML = '<i class="fas fa-play"></i>';
+                            playButton.setAttribute('aria-label', 'Play video');
+                            
+                            // Add button to hero section
+                            heroVideo.parentElement.appendChild(playButton);
+                            
+                            // Handle play button click
+                            playButton.addEventListener('click', () => {
+                                heroVideo.play();
+                                playButton.style.display = 'none';
+                            });
+                        }
+                    });
+            }
+        }
+    };
+
+    // Handle speed control
+    if (speedControl) {
+        speedControl.addEventListener('click', () => {
+            isSlowMotion = !isSlowMotion;
+            heroVideo.playbackRate = isSlowMotion ? 0.5 : 1.0;
+            
+            // Update button state
+            speedControl.classList.toggle('active');
+            speedControl.setAttribute('aria-pressed', isSlowMotion);
+        });
+
+        // Keyboard accessibility
+        speedControl.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                speedControl.click();
+            }
+        });
+    }
+
+    // Try to play video when it's loaded
+    if (heroVideo) {
+        heroVideo.addEventListener('loadeddata', handleVideoPlayback);
+        
+        // Also try to play immediately in case the video is already loaded
+        handleVideoPlayback();
+    }
+
+    // Handle visibility changes to pause/play the video
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            heroVideo?.pause();
+        } else {
+            heroVideo?.play();
+        }
+    });
 }); 
