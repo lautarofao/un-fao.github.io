@@ -104,15 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const heroVideo = document.getElementById('hero-video');
-    const speedControl = document.querySelector('.speed-control');
-    let isSlowMotion = false;
     
     // Function to handle video playback
     const handleVideoPlayback = () => {
         // Check if the video exists and is ready to play
         if (heroVideo && heroVideo.readyState >= 2) {
-            // Set initial playback rate
-            heroVideo.playbackRate = isSlowMotion ? 0.5 : 1.0;
+            // Set slow motion playback rate by default
+            heroVideo.playbackRate = 0.5;
             
             // Play the video
             const playPromise = heroVideo.play();
@@ -122,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 playPromise
                     .then(() => {
                         // Video playback started successfully
-                        console.log('Video playback started');
+                        console.log('Video playback started in slow motion');
                     })
                     .catch(error => {
                         // Auto-play was prevented or there was an error
@@ -140,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             
                             // Handle play button click
                             playButton.addEventListener('click', () => {
+                                heroVideo.playbackRate = 0.5; // Ensure slow motion on manual play
                                 heroVideo.play();
                                 playButton.style.display = 'none';
                             });
@@ -149,32 +148,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Handle speed control
-    if (speedControl) {
-        speedControl.addEventListener('click', () => {
-            isSlowMotion = !isSlowMotion;
-            heroVideo.playbackRate = isSlowMotion ? 0.5 : 1.0;
-            
-            // Update button state
-            speedControl.classList.toggle('active');
-            speedControl.setAttribute('aria-pressed', isSlowMotion);
-        });
-
-        // Keyboard accessibility
-        speedControl.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                speedControl.click();
-            }
-        });
-    }
-
     // Try to play video when it's loaded
     if (heroVideo) {
         heroVideo.addEventListener('loadeddata', handleVideoPlayback);
         
         // Also try to play immediately in case the video is already loaded
         handleVideoPlayback();
+        
+        // Ensure slow motion is maintained when video loops
+        heroVideo.addEventListener('play', () => {
+            heroVideo.playbackRate = 0.5;
+        });
     }
 
     // Handle visibility changes to pause/play the video
@@ -182,7 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.hidden) {
             heroVideo?.pause();
         } else {
-            heroVideo?.play();
+            if (heroVideo) {
+                heroVideo.playbackRate = 0.5; // Ensure slow motion when resuming
+                heroVideo?.play();
+            }
         }
     });
 }); 

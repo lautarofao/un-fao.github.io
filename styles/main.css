@@ -759,58 +759,40 @@ button:focus {
 
 /* Video Controls */
 .video-controls {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2;
+    /* Remove this entire block */
 }
 
 .speed-control {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: var(--transition);
-    color: var(--primary-color);
-    font-weight: 600;
+    /* Remove this entire block */
 }
 
 .speed-control i {
-    font-size: 1.2rem;
+    /* Remove this entire block */
 }
 
 .speed-control:hover,
 .speed-control:focus {
-    background-color: var(--white);
-    transform: scale(1.05);
-    outline: none;
+    /* Remove this entire block */
 }
 
 .speed-control:focus-visible {
-    box-shadow: var(--focus-ring);
+    /* Remove this entire block */
 }
 
 .speed-control.active {
-    background-color: var(--primary-color);
-    color: var(--white);
+    /* Remove this entire block */
 }
 
 @media (max-width: 768px) {
     .video-controls {
-        bottom: 10px;
-        right: 10px;
+        /* Remove this block */
     }
 
     .speed-control span {
-        display: none;
+        /* Remove this block */
     }
 
     .speed-control {
-        padding: 8px;
-        border-radius: 50%;
+        /* Remove this block */
     }
 } 
