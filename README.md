@@ -1,10 +1,10 @@
 # FAO on GitHub
 
-Welcome to the FAO GitHub. Best Practices repository! This project, guidelines, and resources are designed to help teams embed security into every stage of their DevOps lifecycle. Our goal is to drive secure, reliable, and compliant development practices in support of FAO’s global mandate.
+Welcome to the FAO GitHub. Best Practices repository! This project, guidelines, and resources are designed to help teams embed security into every stage of their DevOps lifecycle. Our goal is to drive secure, reliable, and compliant development practices in support of FAO's global mandate.
 
 ## Our Mission
 
-At FAO, our mission is to achieve food security and sustainable agricultural development by integrating robust security practices into our technology and operations. By adopting a “security by design” mindset, we strive to:
+At FAO, our mission is to achieve food security and sustainable agricultural development by integrating robust security practices into our technology and operations. By adopting a "security by design" mindset, we strive to:
 
 - **Embed Security Early:** Integrate security considerations from the planning phase.
 - **Automate Testing:** Leverage automated security testing and vulnerability scanning.
@@ -18,7 +18,7 @@ Learn more about FAO and our initiatives on our [official website](https://www.f
 
 This repository is informed by industry-leading DevSecOps practices. Key principles include:
 
-- **Security by Design:** Secure architecture and threat modeling from the start.
+- **Github Security:** Best practices for securing your GitHub repositories and workflows.
 - **Automated Security Testing:** Integrate static analysis, dependency scanning, and dynamic testing into your CI/CD pipeline.
 - **Infrastructure as Code (IaC):** Apply security best practices to code-managed infrastructure.
 - **Container & Cloud Security:** Implement robust measures for container orchestration and cloud environments.
@@ -29,7 +29,7 @@ For detailed guidelines and additional resources, please explore our [wiki](http
 
 ## Contributing
 
-We welcome contributions from the open-source community! If you’d like to improve our guidelines or add new content, please:
+We welcome contributions from the open-source community! If you'd like to improve our guidelines or add new content, please:
 
 - **Fork the repository.**
 - **Review our [CONTRIBUTING guidelines](CONTRIBUTING.md)** for details on our workflow and expectations.
