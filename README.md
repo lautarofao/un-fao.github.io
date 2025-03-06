@@ -12,7 +12,6 @@ The website consists of the following sections:
 
 - **Mission**: Overview of our mission to foster a secure development environment
 - **Best Practices**: Key principles including security by design, automated testing, and more
-- **Contributing**: Guidelines for contributing to our projects
 - **Repositories**: Links to our key GitHub repositories
 - **Discussions**: Areas for community engagement
 - **Contact**: How to reach our team
@@ -58,14 +57,6 @@ To run this website locally, you have two options:
 - `styles/main.css` - CSS styles
 - `js/main.js` - JavaScript functionality
 - `serve.py` - Python script for local development
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to improve this website:
-
-1. Fork the repository
-2. Create a new branch for your feature
-3. Submit a pull request
 
 ## License
 
