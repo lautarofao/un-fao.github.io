@@ -1,67 +1,57 @@
-# UN-FAO DevSecOps Best Practices
+# FAO on GitHub
 
-This repository hosts the UN-FAO DevSecOps Best Practices website, available at [un-fao.github.io](https://un-fao.github.io).
+Welcome to the FAO GitHub. Best Practices repository! This project, guidelines, and resources are designed to help teams embed security into every stage of their DevOps lifecycle. Our goal is to drive secure, reliable, and compliant development practices in support of FAO’s global mandate.
 
-## About
+## Our Mission
 
-The UN-FAO DevSecOps Best Practices website consolidates tools, guidelines, and resources designed to help teams embed security into every stage of their DevOps lifecycle. Our goal is to drive secure, reliable, and compliant development practices for global development initiatives.
+At FAO, our mission is to achieve food security and sustainable agricultural development by integrating robust security practices into our technology and operations. By adopting a “security by design” mindset, we strive to:
 
-## Website Structure
+- **Embed Security Early:** Integrate security considerations from the planning phase.
+- **Automate Testing:** Leverage automated security testing and vulnerability scanning.
+- **Ensure Continuous Monitoring:** Implement real-time monitoring and logging for threat detection.
+- **Promote Collaboration:** Encourage cross-team dialogue and shared responsibility for security.
+- **Maintain Compliance:** Adhere to industry standards and regulatory requirements.
 
-The website consists of the following sections:
+Learn more about FAO and our initiatives on our [official website](https://www.fao.org/home/es).
 
-- **Mission**: Overview of our mission to foster a secure development environment
-- **Best Practices**: Key principles including security by design, automated testing, and more
-- **Repositories**: Links to our key GitHub repositories
-- **Discussions**: Areas for community engagement
-- **Contact**: How to reach our team
+## Best Practices Overview
 
-## Development
+This repository is informed by industry-leading DevSecOps practices. Key principles include:
 
-This website is built with HTML, CSS, and JavaScript, and is hosted using GitHub Pages.
+- **Security by Design:** Secure architecture and threat modeling from the start.
+- **Automated Security Testing:** Integrate static analysis, dependency scanning, and dynamic testing into your CI/CD pipeline.
+- **Infrastructure as Code (IaC):** Apply security best practices to code-managed infrastructure.
+- **Container & Cloud Security:** Implement robust measures for container orchestration and cloud environments.
+- **Incident Response:** Develop clear protocols for monitoring, logging, and reacting to potential threats.
+- **Collaboration & Continuous Improvement:** Engage in ongoing dialogue via our wiki, discussions, and Q&A forums to keep pace with evolving threats.
 
-### Local Development
+For detailed guidelines and additional resources, please explore our [wiki](https://github.com/un-fao/devsecops-bestpractices/wiki), which includes step-by-step instructions and links to further documentation on each topic.
 
-To run this website locally, you have two options:
+## Contributing
 
-#### Option 1: Using the Python server script
+We welcome contributions from the open-source community! If you’d like to improve our guidelines or add new content, please:
 
-1. Clone this repository
-   ```
-   git clone https://github.com/un-fao/un-fao.github.io.git
-   cd un-fao.github.io
-   ```
+- **Fork the repository.**
+- **Review our [CONTRIBUTING guidelines](CONTRIBUTING.md)** for details on our workflow and expectations.
+- **Submit pull requests** with new features, bug fixes, or enhancements.
+- **Join the discussion** on our channels to share ideas and ask questions.
 
-2. Run the included Python server script
-   ```
-   ./serve.py
-   ```
-   
-   This will start a local server and automatically open the website in your default browser.
+_Not yet a member? Submit your access request via the internal eServices portal._
 
-#### Option 2: Simple file opening
+## Code of Conduct
 
-1. Clone this repository
-   ```
-   git clone https://github.com/un-fao/un-fao.github.io.git
-   ```
+Our community is built on respect and inclusivity. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help us maintain a positive environment for collaboration.
 
-2. Open the `index.html` file in your web browser
-   ```
-   open index.html
-   ```
+## Discussions & Support
 
-### Project Structure
+Engage with fellow contributors and experts:
 
-- `index.html` - Main HTML content
-- `styles/main.css` - CSS styles
-- `js/main.js` - JavaScript functionality
-- `serve.py` - Python script for local development
+- **Announcements:** Get the latest updates and release news.
+- **General Discussion:** Talk about trends, challenges, and experiences in DevSecOps.
+- **Ideas:** Propose new features and innovative security solutions.
+- **Q&A:** Ask questions and get help from the community.
 
-## License
+## Contact Us
 
-This project is licensed under the terms of the MIT license.
-
-## Contact
-
-For questions or feedback, please contact: github@un-fao.org 
+For inquiries or additional information about our projects, reach out at:  
+**Email:** github@un-fao.org
