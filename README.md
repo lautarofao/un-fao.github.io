@@ -27,21 +27,6 @@ This repository is informed by industry-leading DevSecOps practices. Key princip
 
 For detailed guidelines and additional resources, please explore our [wiki](https://github.com/un-fao/devsecops-bestpractices/wiki), which includes step-by-step instructions and links to further documentation on each topic.
 
-## Contributing
-
-We welcome contributions from the open-source community! If you'd like to improve our guidelines or add new content, please:
-
-- **Fork the repository.**
-- **Review our [CONTRIBUTING guidelines](CONTRIBUTING.md)** for details on our workflow and expectations.
-- **Submit pull requests** with new features, bug fixes, or enhancements.
-- **Join the discussion** on our channels to share ideas and ask questions.
-
-_Not yet a member? Submit your access request via the internal eServices portal._
-
-## Code of Conduct
-
-Our community is built on respect and inclusivity. Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help us maintain a positive environment for collaboration.
-
 ## Discussions & Support
 
 Engage with fellow contributors and experts:
