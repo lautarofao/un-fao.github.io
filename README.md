@@ -39,4 +39,4 @@ Engage with fellow contributors and experts:
 ## Contact Us
 
 For inquiries or additional information about our projects, reach out at:  
-**Email:** github@un-fao.org
+**Email:** sdlc-support@fao.org
